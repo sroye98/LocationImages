@@ -3,13 +3,20 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Location Based Images from Unsplash.com">
+        <meta name="keywords" content="Location,Cities,City,States,State,Unsplash">
+        <meta name="author" content="Saachi Roye">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/site.css">
 
         <title>Location Images</title>
     </head>
@@ -18,98 +25,251 @@
             <a href="#" class="navbar-brand col-sm-3 col-md-2 mr-0">Location Images</a>
             <ul class="navbar-nav px-3">
                 <li class="nav-item text-nowrap">
-                    <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
+                    <a class="nav-link" href="https://github.com/sroye98/LocationImages"><i class="fab fa-github"></i></a>
                 </li>
             </ul>
         </div>
         <div class="container-fluid">
             <div class="row">
-                <main role="main" class="col-md-12 ml-sm-auto col-lg-12 pt-5">
-                    <h1 class="h2">How To Load Images</h1>
-                    <ol>
-                        <li>
-                            Fill the size you desire:
-                            <ul>
-                                <li>100px = 100</li>
-                                <li>150px = 150</li>
-                                <li>300px = 300</li>
-                                <li>500px = 500</li>
-                                <li>750px = 750</li>
-                                <li>1000px = 1000</li>
-                                <li>1024px = 1024</li>
-                                <li>1500px = 1500</li>
-                                <li>2500px = 2500</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Fill the state you desire (all lowercase):
-                            <ul>
-                                <li>Alabama = alabama</li>
-                                <li>Alaska = alaska</li>
-                                <li>Arizona = arizona</li>
-                                <li>Arkansas = arkansas</li>
-                                <li>California = california</li>
-                                <li>Colorado = colorado</li>
-                                <li>Connecticut = connecticut</li>
-                                <li>Delaware = delaware</li>
-                                <li>Florida = florida</li>
-                                <li>Georgia = georgia</li>
-                                <li>Hawaii = hawaii</li>
-                                <li>Idaho = idaho</li>
-                                <li>Illinois = illinois</li>
-                                <li>Indiana = indiana</li>
-                                <li>Iowa = iowa</li>
-                                <li>Kansas = kansas</li>
-                                <li>Kentucky = kentucky</li>
-                                <li>Louisiana - louisiana</li>
-                                <li>Maine = maine</li>
-                                <li>Maryland = maryland</li>
-                                <li>Massachusetts = massachusetts</li>
-                                <li>Michigan = michigan</li>
-                                <li>Minnesota = minnesota</li>
-                                <li>Mississipi = mississipi</li>
-                                <li>Missouri = missouri</li>
-                                <li>Montana = montana</li>
-                                <li>Nebraska = nebraska</li>
-                                <li>Nevada = nevada</li>
-                                <li>New Hampshire = new-hampshire</li>
-                                <li>New Jersey = new-jersey</li>
-                                <li>New Mexico = new-mexico</li>
-                                <li>New York = new-york</li>
-                                <li>North Carolina = north-carolina</li>
-                                <li>North Dakota = north-dakota</li>
-                                <li>Ohio = ohio</li>
-                                <li>Oklahoma = oklahoma</li>
-                                <li>Oregon = oregon</li>
-                                <li>Pennsylvania = pennsylvania</li>
-                                <li>Rhode Island = rhode-island</li>
-                                <li>South Carolina = south-carolina</li>
-                                <li>South Dakota = south-dakota</li>
-                                <li>Tennesse = tennesse</li>
-                                <li>Texas = texas</li>
-                                <li>Utah = utah</li>
-                                <li>Vermont = vermont</li>
-                                <li>Virginia = virginia</li>
-                                <li>Washington = washington</li>
-                                <li>West Virginia = west-virginia</li>
-                                <li>Wisconsin = wisconsin</li>
-                                <li>Wyoming = wyoming</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Create your image tag like this:
-                            <pre><code>&lt;img src="https://sroye98.github.io/LocationImages/states/{SIZE}/{STATE}.jpg" alt="{STATE}" /&gt;</code></pre>
-                            Make sure to add any image class your library supports.
-                        </li>
-                    </ol>
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <div class="sidebar-sticky" id="sidebar">
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                            Sizes
+                        </h6>
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Options</a>
+                            </li>
+                        </ul>
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                            States
+                        </h6>
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item"><a class="nav-link" href="#alabama">Alabama</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#alaska">Alaska</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#arizona">Arizona</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#arkansas">Arkansas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">California</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Colorado</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Connecticut</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Delaware</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Florida</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Georgia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Hawaii</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Idaho</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Illinois</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Indiana</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Iowa</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Kansas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Kentucky</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Louisiana</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Maine</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Maryland</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Massachusetts</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Michigan</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Minnesota</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Mississipi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Missouri</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Montana</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Nebraska</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Nevada</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">New Hampshire</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">New Jersey</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">New Mexico</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">New York</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">North Carolina</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">North Dakota</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Ohio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Oklahoma</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Oregon</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Pennsylvania</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Rhode Island</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">South Carolina</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">South Dakota</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Tennesse</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Texas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Utah</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Vermont</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Virginia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Washington</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">West Virginia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Wisconsin</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Wyoming</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-6">
+                    <h1 class="h2">Location Images</h1>
+                    <p>After searching through out the internet and not finding a solution for this. I decided to build my own image solution.</p>
+                    <p>I am open to comments or questions about this project.</p>
+                    <p>Also all images were found on <a href="https://unsplash.com" target="_blank">Unsplash.com</a>. I will keep adding images to this repo.</p>
+
+                    <!-- Alabama -->
+                    <div class="row" id="alabama">
+                        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                            <hr />
+                            <h2 class="h4">Alabama</h2>
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Size image tags:</h5>
+                                    <code>
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/100/alabama.jpg" alt="Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/150/alabama.jpg" alt="Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/300/alabama.jpg" alt="Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/500/alabama.jpg" alt="Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/750/alabama.jpg" alt="Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1000/alabama.jpg" alt="Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1024/alabama.jpg" alt="Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1500/alabama.jpg" alt="Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/2500/alabama.jpg" alt="Alabama" /&gt;
+                                    </code>
+                                </div>
+                            </div>
+                            <h2 class="h5 pt-3">Alabama Cities</h2>
+                            <h3 class="h6">Ozark</h3>
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Size image tags:</h5>
+                                    <code>
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/100/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/150/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/300/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/500/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/750/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1000/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1024/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1500/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/2500/ozark-alabama.jpg" alt="Ozark, Alabama" /&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Alabama -->
+
+                    <!-- Alaska -->
+                    <div class="row" id="alaska">
+                        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                            <hr />
+                            <h2 class="h4">Alaska</h2>
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Size image tags:</h5>
+                                    <code>
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/100/alaska.jpg" alt="Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/150/alaska.jpg" alt="Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/300/alaska.jpg" alt="Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/500/alaska.jpg" alt="Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/750/alaska.jpg" alt="Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1000/alaska.jpg" alt="Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1024/alaska.jpg" alt="Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1500/alaska.jpg" alt="Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/2500/alaska.jpg" alt="Alaska" /&gt;
+                                    </code>
+                                </div>
+                            </div>
+                            <h2 class="h5 pt-3">Alaska Cities</h2>
+                            <h3 class="h6">Juneau</h3>
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Size image tags:</h5>
+                                    <code>
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/100/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/150/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/300/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/500/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/750/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1000/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1024/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1500/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/2500/juneau-alaska.jpg" alt="Juneau, Alaska" /&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Alaska -->
+
+                    <!-- Arizona -->
+                    <div class="row" id="arizona">
+                        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                            <hr />
+                            <h2 class="h4">Arizona</h2>
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Size image tags:</h5>
+                                    <code>
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/100/arizona.jpg" alt="Arizona" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/150/arizona.jpg" alt="Arizona" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/300/arizona.jpg" alt="Arizona" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/500/arizona.jpg" alt="Arizona" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/750/arizona.jpg" alt="Arizona" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1000/arizona.jpg" alt="Arizona" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1024/arizona.jpg" alt="Arizona" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1500/arizona.jpg" alt="Arizona" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/2500/arizona.jpg" alt="Arizona" /&gt;
+                                    </code>
+                                </div>
+                            </div>
+                            <h2 class="h5 pt-3">Arizona Cities</h2>
+                            <p>Coming Soon</p>
+                        </div>
+                    </div>
+                    <!-- End of Arizona -->
+
+                    <!-- Arkansas -->
+                    <div class="row" id="arkansas">
+                        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                            <hr />
+                            <h2 class="h4">Arkansas</h2>
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Size image tags:</h5>
+                                    <code>
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/100/arkansas.jpg" alt="Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/150/arkansas.jpg" alt="Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/300/arkansas.jpg" alt="Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/500/arkansas.jpg" alt="Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/750/arkansas.jpg" alt="Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1000/arkansas.jpg" alt="Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1024/arkansas.jpg" alt="Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/1500/arkansas.jpg" alt="Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/states/2500/arkansas.jpg" alt="Arkansas" /&gt;
+                                    </code>
+                                </div>
+                            </div>
+                            <h2 class="h5 pt-3">Arkansas Cities</h2>
+                            <h3 class="h6">Springdale</h3>
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title">Size image tags:</h5>
+                                    <code>
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/100/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/150/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/300/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/500/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/750/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1000/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1024/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/1500/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;<br />
+                                        &lt;img src="https://sroye98.github.io/LocationImages/cities/2500/springdale-arkansas.jpg" alt="Springdale, Arkansas" /&gt;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Arkansas -->
                 </main>
             </div>
         </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="assets/js/site.js"></script>
     </body>
 </html>
